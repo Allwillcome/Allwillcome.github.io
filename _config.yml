@@ -1,13 +1,13 @@
 # Site settings
 title: 阿帅的网志 # 你的博客名字，可以定义修订
 header-img: "img/green.jpg"
-tagline: "cn"  
+tagline: "cn"
 description: "分享体育知识"  # 一句话描述你的博客
 baseurl: ""
-url: "http://www.waterfree.club"  # 此处填写你的博客地址 
+url: "http://www.waterfree.club"  # 此处填写你的博客地址
 
 # About/contact
-owner: 
+owner:
   name: "阿帅" # 填写作者信息：名字
   email: lyingonthelawn@yeah.net # 填写作者信息：邮箱
   bio: "导游运动科学世界，分享些许感悟" # 填写作者信息：博客描述
@@ -16,16 +16,16 @@ owner:
 gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
 favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
 
-douban_username:154349881  # 你的豆瓣id
-twitter_username: 
-github_username: 
-facebook_username: 
-weibo_username: 
-zhihu_username: 
+douban_username:  # 你的豆瓣id
+twitter_username:
+github_username:
+facebook_username:
+weibo_username:
+zhihu_username:
 
-# Build settings  
-# use Github Flavored Markdown !important  
-# document: http://jekyllrb.com/docs/configuration/#kramdown  
+# Build settings
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
@@ -38,7 +38,7 @@ timezone: Asia/Shanghai
 # Defaults for posts
 defaults:
   -
-    scope: 
+    scope:
       path: ""
       type: "posts"
     values:
@@ -46,7 +46,7 @@ defaults:
       author: "阿帅" # 你的名字
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
-# Comments 
+# Comments
 comments :
   provider : disqus # 使用 disqus 评论模块，读者翻墙才能看见
   duoshuo :
