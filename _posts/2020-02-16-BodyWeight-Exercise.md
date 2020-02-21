@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自重健身00
-date: 2020-02-14
+date: 2020-02-16
 categories: blog
 tags: [自重训练,健身]
 description: 开始你的自重训练
