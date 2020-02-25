@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 「整体观」杂感
-date: 2020-2-14
+date: 2018-4-09
 categories: blog
 tags: [Resource,Sport]
 description: 对整体观的杂感！

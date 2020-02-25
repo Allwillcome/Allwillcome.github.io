@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 快伸缩复合训练
-date: 2020-2-14
+date: 2018-8-6
 categories: blog
 tags: [Resource,Sport]
 description: 快伸缩复合训练
