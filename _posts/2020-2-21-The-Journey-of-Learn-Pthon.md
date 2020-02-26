@@ -9,6 +9,213 @@ description: 记录黑客成长路！
 
 **记录 Python 学习路**
 
+### 2020-2-26
+
+今日没有完成任务，
+
+1. **输入大段代码，不再恐惧** 。更喜欢用命令行解决问题。阅读代码的能力还需要增强。
+
+2. 成功解决 `cnpm` 不能使用的问题。
+
+3. 体会到 GitHub 工具的伟大性，关键步骤又提交，凝练改动结果，进行提交
+
+4. 发现优质图床管理软件，[PicGo](https://picgo.github.io/PicGo-Doc/zh/guide/#下载安装)支持，Windo、Mac 和Linux
+
+   typro支持 Picgo插件
+
+   ![mark](http://rsc.waterfree.club/rsc/20200226/71jkfOWUL8z7.png)
+
+   另外发现本页面是使用 gitbook 托管生成
+
+**2020-2-26 22:09:55**
+
+概念是参照于一个来自《[程序员修炼之道](https://baike.baidu.com/item/程序员修炼之道/7872985)》书中的一个故事。传说中程序大师随身携带一只小黄鸭，在调试代码的时候会在桌上放上这只小黄鸭，然后详细地向鸭子解释每行代码 [1] 。
+　　许多程序员都有过向别人（甚至可能向完全不会编程的人）提问及解释编程问题，就在解释的过程中击中了问题的解决方案。一边阐述代码的意图一边观察它实际上的意图并做调试，这两者之间的任何不协调会变得很明显，并且更容易发现自己的错误。如果没有玩具小鸭子也可以考虑向其它东西倾诉，比如桌上的花花草草，键盘鼠标。
+
+![](https://bkimg.cdn.bcebos.com/pic/63d0f703918fa0ecb89a22ea2a9759ee3c6ddbfc?x-bce-process=image/resize,m_lfit,w_268,limit_1/format,f_jpg)
+
+**2020-2-26 21:40:11**
+
+命令行的语法解释
+
+```powershell
+$ picgo -h
+
+  Usage: picgo [options] [command]
+
+  Options:
+
+    -v, --version                 output the version number
+    -d, --debug                   debug mode
+    -s, --silent                  silent mode
+    -c, --config <path>           set config path
+    -h, --help                    output usage information
+
+  Commands:
+
+    install|add <plugins...>             install picgo plugin
+    uninstall|rm <plugins...>            uninstall picgo plugin
+    update <plugins...>                  update picgo plugin
+    set|config <module> [name]           configure config of picgo modules
+    upload|u [input...]                  upload, go go go
+    use [module]                         use modules of picgo
+    init [options] <template> [project]  create picgo plugin's development templates
+```
+
+>**提示**
+>
+>其中，命令选项如果是用`<>`包围起来的为必须输入项，如果是用`[]`包围起来的则为可选输入项。 有些命令支持简写，比如`picgo upload`可以写为`picgo u`。
+
+ref: [PicGo-Core--CLI命令](https://picgo.github.io/PicGo-Core-Doc/zh/guide/commands.html#use)
+
+2020-2-26 21:33:17
+
+**node.js  yarn npm **
+
+参见[node.js、yarn、npm到底是什么？](https://www.cnblogs.com/wendyw/p/11494036.html)
+
+**Node.js**： JavaScript 是 Web 的编程语言，node.js 就是运行在服务端的 JavaScript。
+
+Npm：node.js 一起安装的包管理工具。
+
+比如：我们要使用模块 A，而模块 A 又依赖模块 B，模块 B 又依赖于模块 X 和 Y，npm 可以根据依赖关系，把所有依赖的包都下载下来并管理起来。单纯通过访问页面一个个脚本进行下载是没有办法进行的。
+
+npm 由 3 个独立的部分组成：网站、注册表 (registry)、命令行工具（CLI）
+
+CLI 通过命令行或终端运行，开发者通过 CLI 与 npm 打交道。**命令行的重要性** 。
+
+所以，必须会命令行。
+
+2020-2-26 20:13:39
+
+**目录**
+
+上计算机课时，老师会给自己将目录，讲什么相对路径，绝对路径，感觉没有什么卵用。后来看到有人说 Mac 支持树形目录，Win 不支持，云里雾里的。
+
+后来才知道 目录 ，路径 是多么重要的概念， 应用阳志平先生的划分，一切事物都可以拆分成 **空间**、**时间** 和 **变量**。路径就是告诉找到这个文件的位置，找到位置才能执行命令。
+
+百度百科解释：
+
+> 根目录指逻辑驱动器的最上[一级目录](https://baike.baidu.com/item/一级目录/8932671)，它是相对[子目录](https://baike.baidu.com/item/子目录/4728026)来说的。打开“我的电脑”，双击C盘就进入C盘的根目录，双击D盘就进入D盘的根目录。其它类推。
+>
+> 根目录在文件系统建立时即已被创建，其目的就是存储子目录（也称为文件夹）或文件的目录项。一“棵“目录树，树的最根本就是它的根（根目录）。
+
+还是太过抽象，我们拿解压到磁盘根目录为例，
+
+[**什么叫解压到磁盘根目录下?怎么样理“根目录”**](http://ask.zol.com.cn/x/4662958.html)
+
+简单,根目录就是在某个盘的直接管理,没有在其他的文件夹下面,比如D盘,就只能在D盘下,D盘有两个文件夹"我的学习资料" ,"我的音乐"都不能在这两个文件夹中,这属于子文件夹了
+
+**一点启示**： 抽象的问题不妨结合一个具体的例子就很清楚了。
+
+[目录表示方式~/与..\分别什么意思，有什么区别？](https://zhidao.baidu.com/question/551960216836350652.html)
+
+> <directory>起限制对目录A的访问的作用，即只允许指定的用户访问A这个目录，通常是指需要登录。
+> ~ \代表主目录，假设你登陆的用户名为user，~ /就表示 /home/user；
+> ..\是指上级目录，如果这个[xml文件](https://www.baidu.com/s?wd=xml文件&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)在目录C中，那么C就是包含在文件夹B中的；
+> ..\..\是指上级目录的上级目录。
+
+文件位置
+
+`PS C:\Users\lenovo\desktop\others\clock.py`
+
+
+
+相对路径
+
+```powershell
+PS C:\Users\lenovo\desktop> python .\others\clock.py
+```
+
+绝对路径
+
+```powershell
+PS C:\Users\lenovo\desktop> python C:\Users\lenovo\desktop\others\clock.py 
+```
+
+在文件目录执行命令
+
+```powershell
+PS C:\Users\lenovo\desktop\others> python clock.py
+```
+
+文件不过来，命令走过去。命令过来，适合文件比较多分布在同一个文件
+
+对比上述三种方式
+
+```powershell
+PS C:\Users\lenovo\desktop> python .\others\clock.py # 相对路径
+PS C:\Users\lenovo\desktop\others> python clock.py #在文件目录执行命令
+PS C:\Users\lenovo\desktop> python C:\Users\lenovo\desktop\others\clock.py #绝对路径
+```
+
+==调整顺序==
+
+走过来，走过去比较麻烦，不如让 命令 统摄全局
+
+全局环境变量
+
+属性
+
+命令行
+
+==增加具体细节== 
+
+
+
+另外在 命令行应用中一般 `.`  是当前命令，`..` 是上级目录，`cd ..` 帮助我们返回上层目录。
+
+**cnpm** 包安装不能使用问题
+
+npm 是包安装管理工具，能够通过在终端输入 命令行进行下载，但是 npm 服务器在国外，下载不稳定，于是使用淘宝镜像源进行下载，但是在 win 10 安装后，运行 `cnpm` 命令，提示
+
+```powershell
+cnpm : 无法加载文件 C:\Users\hp\AppData\Roaming\npm\cnpm.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的  
+about_Execution_Policies。
+所在位置 行:1 字符: 1
+ cnpm install amfe-flexible
++ ~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+————————————————
+
+```
+
+解决方法:
+
+1. 以**管理员身份**运行power shell (cmd 不行)
+2. 输入 `set-ExecutionPolicy RemoteSigned` 显示
+3. "C:\Users\lenovo\Desktop\公众号二维码0.5m.jpg"
+
+```powershell
+PS C:\WINDOWS\system32> set-ExecutionPolicy RemoteSigned
+
+执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如
+ https:/go.microsoft.com/fwlink/?LinkID=135170 中的
+about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+[Y] 是(Y)  [A] 全是(A)  [N] 否(N)  [L] 全否(L)  [S] 暂停(S)  [?] 帮助
+(默认值为“N”):
+```
+
+3.  然后输入A 回车 问题解决
+
+更多内容 [npm 与 cnpm](https://www.jianshu.com/p/115594f64b41)
+
+摘录：
+
+`-g`：全局安装。 将会安装在C：\ Users \ Administrator \ AppData \ Roaming \ npm，**并且写入系统环境变量**；非全局安装：将会安装在当前定位目录;全局安装可以通过命令行任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，通过要求调用; 
+
+
+
+ex41习题辅助jieda
+
+[]()
+
+[ex41](https://blog.csdn.net/xjc0518/article/details/100623266)
+
+<img src="http://rsc.waterfree.club/rsc/20200226/Ld5vXG9BgldF.png" alt="mark" style="zoom:33%;" />
+
 ### 2020-2-25 
 
 今日复盘
