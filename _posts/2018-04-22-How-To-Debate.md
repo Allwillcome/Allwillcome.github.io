@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 百家争鸣时代，我们该怎么好好辩论？
-date: 2020-2-14
+date: 2018-4-22
 categories: blog
 tags: [Resource,Sport]
 description: 百家争鸣时代，我们该怎么好好辩论？
