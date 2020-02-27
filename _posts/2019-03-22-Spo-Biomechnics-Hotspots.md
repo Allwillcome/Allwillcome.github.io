@@ -9,8 +9,6 @@ description: 运动生物力学热点
 
 
 
-
-
 # 协会（Association）
 
 [International Society of Biomechanics in Sport](https://isbs.org/)
