@@ -9,6 +9,168 @@ description: 记录黑客成长路！
 
 **记录 Python 学习路**
 
+### 2020-2-27
+
+2020-2-27 14:39:23
+
+撰文一篇，**将 Markdown 转换成网页版 PPT**
+
+- 不能直接转换成 PPT
+- 可以具有 PPT 的效果
+- 使用[reveal-md](https://github.com/webpro/reveal-md)，高阶使用 reveal.js
+- 介绍命令行的使用
+
+2020-2-27 13:48:50
+
+- 设置主题为白色
+
+```powershell
+PS F:\explore> reveal-md .\20200227demo.md --theme white
+```
+
+
+
+- 支持多个命令同时执行，设置主题为白色，并打印为 pdf
+
+```powershell
+PS F:\explore> reveal-md .\20200227demo.md --theme white --print
+```
+
+
+
+PS F:\explore> reveal-md .\20200227demo.md --theme white
+
+2020-2-27 13:30:36
+
+记录问题的过程就伴随着问题的解决
+
+
+
+问题描述
+
+在 PowerShell 中运行命令后，不能自动退出，也不能移动光标，只能重新关掉 PowerShell 重新进行操作，太过麻烦。
+
+```powershell
+PS F:\explore> reveal-md .\20200227demo.md print
+Reveal-server started at http://localhost:1948
+
+
+```
+
+百度搜索： 如何使用 PowerShell 关闭程序命令
+
+都是一堆用 PowerShell 关闭程序运行的。
+
+还有说 `exit` 命令，也无济于事。
+
+想想可能是提问方式不对，这应该是有自己不会的操作。
+
+比如进入 Python 对话编译器是 `Ctrl + Z` ,于是搜索 “ PowerShell快捷键“，查找到：
+
+> Ctrl+C	取消正在执行的命令
+
+进行执行
+
+```powershell
+PS F:\explore> reveal-md .\20200227demo.md print
+Reveal-server started at http://localhost:1948
+Received SIGINT, closing gracefully.
+```
+
+成功！
+
+总结两点：
+
+1. 换个提问方式
+2. 多看几个回答，至少三个
+3. 瞄准问题答案
+
+2020-2-27 12:59:56
+
+[命令行补充](https://www.baidu.com/link?url=eHljczvC0OU4XDlG4CKUnBpF2mgKDpUjc6_OcfO8B_v1JNNuz9U2Eau9LlbdMTOa&wd=&eqid=d9369dcb0027c042000000035e574c35)
+
+2020-2-27 12:35:39
+
+Docker 是一个开源的应用容器引擎，基于 [Go 语言](https://www.runoob.com/go/go-tutorial.html) 并遵从 Apache2.0 协议开源。
+
+Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。
+
+容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。
+
+Docker 从 17.03 版本之后分为 CE（Community Edition: 社区版） 和 EE（Enterprise Edition: 企业版），我们用社区版就可以了。
+
+[Docker教程 ](https://www.runoob.com/docker/docker-tutorial.html)
+
+2020-2-27 12:28:26
+
+YAML 是 "YAML Ain't a Markup Language"（YAML 不是一种标记语言）的递归缩写。在开发的这种语言时，YAML 的意思其实是："Yet Another Markup Language"（仍是一种标记语言）。
+
+YAML 的语法和其他高级语言类似，并且可以简单表达清单、散列表，标量等数据形态。它使用空白符号缩进和大量依赖外观的特色，特别适合用来表达或编辑数据结构、各种配置文件、倾印调试内容、文件大纲（例如：许多电子邮件标题格式和YAML非常接近）。
+
+YAML 的配置文件后缀为 **.yml**，如：**runoob.yml** 。
+
+
+
+编程免不了要写配置文件，怎么写配置也是一门学问。
+
+YAML 是专门用来写配置文件的语言，非常简洁和强大，远比 JSON 格式方便。
+
+本文介绍 YAML 的语法，以 [JS-YAML](https://github.com/nodeca/js-yaml) 的实现为例。你可以去[在线 Demo](http://nodeca.github.io/js-yaml/) 验证下面的例子。[^1]
+
+[^1]:[YAML语法 ——阮一峰](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
+
+2020-2-27 12:08:49
+
+[Reveal-md ](https://www.jianshu.com/p/24cb76c07754) 
+
+[Reveal-md Github介绍](https://github.com/webpro/reveal-md)
+
+2020-2-27 11:43:22
+
+[Markdown+pandoc+reveal.js 做网页 PPT - 简书](https://www.jianshu.com/p/9b71614f57b1)
+
+2020-2-27 10:39:39
+
+- ### 一些快捷键
+
+  - ← ↑ → ↓: 控制幻灯片的切换。
+  - ESC：对幻灯片做个整体的概览。
+  - ALT+click ：类似 PowerPoint 放映的时候的放大镜的效果，镜头迅速拉近。
+  - S：开启演讲者模式，这点和 PowerPoint 类似，分成四个板块：当前幻灯片的显示，下一张幻灯片的预览，当前演讲时间以及演讲的备注笔记。
+  - B：暂时停止当前的幻灯片的放映，呈现黑屏。在演讲时，当你希望听众能把注意力集中在你身上的时候，非常有用。
+
+  [用 reveal.js 随心所欲地制作 PPT](https://sspai.com/post/42179)
+
+幻灯片的内容需要包含在<div> <div>的标签中。
+
+一个 section 是一页幻灯片。
+
+如果你将多个 <section> 放到另一个 < section> 的内部，它们将会以垂直幻灯片的方式显示。第一个垂直幻灯片是其它的 “root（根）”
+
+怎么理解呢？ 可以这样理解：横向的幻灯片代表一章，纵向的幻灯片代表一章中的一节。那么横向的幻灯片在播放时是左右切换的，而纵向的幻灯片是上下切换的。
+
+ppt的储存
+
+参见
+
+[网页PPT： reveal.js 介绍——腾讯云](https://cloud.tencent.com/developer/article/1195003)
+
+http://yisibl.github.io/share/the-beauty-of-center-in-CSS.html#/
+
+[原网站链接翻译](https://www.awesomes.cn/repo/hakimel/reveal-js)
+
+[官网](https://github.com/hakimel/reveal.js)
+
+[Reveal.js：把你的 Markdown 文稿变成 PPT——少数派](https://sspai.com/post/40657)
+
+```powershell
+pandoc slides.md -o slides.html -t revealjs -s -V theme=white
+```
+
+
+
+[使用 Reveal.js 做交互式在线PPT的心得——知乎](https://zhuanlan.zhihu.com/p/83425852)
+
 ### 2020-2-26
 
 今日没有完成任务，
@@ -442,3 +604,5 @@ Python编程快速上手，有很多使用 Python 进行自动化的例子，给
   - 菜鸟教程
 ## README
 一口吃不成胖子，一下学不成编程，记录编程成长路，回头看看一点感动，也是记忆外部化！
+
+[^1]: 
