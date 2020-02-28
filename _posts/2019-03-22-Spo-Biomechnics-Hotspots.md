@@ -1,13 +1,11 @@
 ---
 layout：posts
-title: 运动生物力学热点
+title:运动生物力学热点
 date: 2019-3-22
 categories: blog
 tags: [Sport,生物力学]
 description: 运动生物力学热点
 ---
-
-
 
 # 协会（Association）
 

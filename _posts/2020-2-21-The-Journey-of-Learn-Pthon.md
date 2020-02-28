@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 笨办法学Python
+title:笨办法学Python
 date: 2020-2-21
 categories: blog
 tags: [学习，黑客]
@@ -8,6 +8,21 @@ description: 记录黑客成长路！
 ---
 
 **记录 Python 学习路**
+
+### 20200228
+
+2020-2-28 22:09:10
+
+[python 在powershell中运行中文乱码时有时无怎么办？ - SegmentFault 思否](https://segmentfault.com/q/1010000004406660) 
+
+2020-2-28 14:24:01
+
+python 中 exit(0) 和 exit()1 有什么功能？
+在很多类型的操作系统里，exit(0) 可以中断某个程序，而其中的数字参数则用来表示程序是否是碰到错误而中断。exit(1) 表示发生了错误进行退出，而 exit(0) 则表示程序是正常退出的，退出代码是告诉解释器的（或操作系统）。这和我们学的布尔逻辑 0==False 正好相反，不过你可以用不一样的数字表示不同的错误结果。比如你可以用 exit(100) 来表示另一种和 exit(2) 或 exit(1) 不同的错误。
+
+2020-2-28 12:40:48
+
+[笨方法学python3: ex43中文魔改_CSDN博客](https://blog.csdn.net/weixin_39518371/article/details/82958054) 
 
 ### 2020-2-27
 
