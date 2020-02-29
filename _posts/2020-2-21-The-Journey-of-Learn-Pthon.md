@@ -9,6 +9,83 @@ description: 记录黑客成长路！
 
 **记录 Python 学习路**
 
+### 20200229
+
+2020-2-29 17:02:46
+
+- 官方文档，讲解很详细
+
+  [Python 教程 — Python 3.7.6 文档](https://docs.python.org/zh-cn/3.7/tutorial/index.html)
+
+- Python 安装教程
+
+   [Python 环境安装教程（Windows）](https://blog.csdn.net/qq_36667170/article/details/79275605)
+
+2020-2-29 16:45:22
+
+如果安装好了，但是python还是不能被识别，那你需要在PowerShell下输入并执行以下命令：
+
+```[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")```
+
+必要是重启 PowerShell，重启电脑。
+
+**Python 多版本安装**
+
+终极解决方案
+
+[电脑同时安装了python2和python3后，随意切换版本并使用pip安装 - 南山散人 - 博客园](https://www.cnblogs.com/python-kp/p/9361926.html)
+
+ref:
+
+* [通过cmd切换python2和python3版本_Python_YoungfreeFJS的博客-CSDN博客](https://blog.csdn.net/qq471011042/article/details/81067107)
+* [使用Anaconda实现Python2和Python3共存及相互转换 - 简书](https://www.jianshu.com/p/fe327b72fa31)
+
+上面两种方法均需要安装 Anaconda ，且 activate 命令在powershell 中需要版本 在4.4 以上
+
+**方法归纳** 
+
+1. 跳出问题看问题
+2. 不要死扣一个问题
+
+2020-2-29 14:57:41
+
+如果需要使用 Pycharm 又恰好是学生的话，可以免费申请享用高大上的Professional版本。
+
+- 申请地址：https://www.jetbrains.com/student/
+
+在填写学校邮箱申请完成后，会收到一封激活邮件。点击链接激活后会收到一封包含下载地址链接的邮件，就可以享用 Jetbrains 的所有专业软件了。
+
+2020-2-29 14:48:32
+
+[[K萌君]教你做Windows + Ubuntu双系统](https://www.bilibili.com/video/av9855447)
+
+2020-2-29 14:38:33
+
+**windows文件和Linux文件的位置**
+要是想在Ubuntu里查看windows分区里面的文件可以在/mnt埋面查看要是想在windows里面查看Ubuntu里面的文件，在我电脑上的位置是
+C:\Users\你的用户名\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_ 79rhkp1fndgsc\LocalState/rootfs
+
+
+
+**因为没有内核导致的-些坑**
+没有真正的Linux Kernel,所以mtr, traceroute, iptables都用不了， docker 用不了。装apache会捆绑ufw,结果ufw也用不了。因此重度依
+赖内核的东西还是算了，不能在上面搞。
+
+
+
+2020-2-29 13:18:18 
+
+在 Windows 上安装 Ubuntu 子系统[^2.29.13]
+
+[^2.29.13]:[不用装双系统，直接在 Windows 上体Linux：Windows Subsystem for Linux - 少数派](https://sspai.com/post/43813) 
+
+[用 Linux 为主力系统，也能有 Windows 一样的使用体验 - 少数派](https://sspai.com/post/38895)
+
+虚拟机
+
+- [VMware 中国 – 云计算、移动化与网络和安全解决方案 | CN](https://www.vmware.com/cn.html)
+- [virtualbox](https://www.virtualbox.org/)
+
 ### 20200228
 
 2020-2-28 22:09:10
