@@ -9,9 +9,51 @@ description: 记录黑客成长路！
 
 **记录 Python 学习路**
 
-代码编程有日志。记录自己学习 Python 中遇到的问题，便于自己后面回看查找；也可以在学习过程中学
+### README
+
+程序运行有日志，自己学习也要有记录。
+
+记录自己学习 Python 中遇到的问题，
+
+1. 便于自己回头查看；
+
+2. 复盘查看，优化学习过程；
+
+3. 整理成文，分享学习过程
+
+**文章结构**：
+
+- 以日期为三级标题 （便于以后将里程碑设置为二级标题）
+  - 在 三级标题内 以时间为节点记录内容
+
+### 2020-3-1 
+
+**任务完成**：
+
+- 成功运行 ex43.py 大战哥顿人逃生小游戏
+- 对程序进行批注，理解程序
+- 理解类与对象
+
+**编程用时：**
+
+7 h
+
+**待改进**：
+
+- 更耐心对不懂程序进行批注
+- 多动手编写程序，代码
+- 提升效率
 
 
+
+2020-3-1 20:14:47
+
+- 问题描述：Typora 官方文档中说可以自动上传拖拽到文件中的图片，自己下载 PicGo 并在 Typora 中进行配置之后，无法自动上传。
+- 已经做努力：
+  - 以管理员身份打开 Typora 以及 PicGo
+  - 查询官网
+    - If you use, custom command, and after clicking “Test Uploader” button in preferences panel, and its console output is Garbled characters, you may try to force the process to use UTF8 encoding, by prepending `@chcp 65001 >nul & cmd /d/s/c `before your custom command.
+    - 彩云小译翻译：如果您使用，自定义命令，并在首选项面板中单击“ Test Uploader”按钮后，其控制台输出为含糊字符，您可以通过在自定义命令之前预置@chcp 65001 nul & cmd / d / s / c，尝试强制进程使用 UTF8编码。
 
 2020-3-1 17:07:01
 
@@ -138,7 +180,7 @@ ref : [wzpan/Learn-Python-The-Hard-Way: My answer for the book Learn Python The 
 
 - Python 安装教程
 
-   [Python 环境安装教程（Windows）](https://blog.csdn.net/qq_36667170/article/details/79275605)
+  [Python 环境安装教程（Windows）](https://blog.csdn.net/qq_36667170/article/details/79275605)
 
 2020-2-29 16:45:22
 
@@ -160,6 +202,8 @@ ref:
 * [使用Anaconda实现Python2和Python3共存及相互转换 - 简书](https://www.jianshu.com/p/fe327b72fa31)
 
 上面两种方法均需要安装 Anaconda ，且 activate 命令在powershell 中需要版本 在4.4 以上
+
+
 
 **方法归纳** 
 
@@ -196,7 +240,7 @@ C:\Users\你的用户名\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWi
 
 在 Windows 上安装 Ubuntu 子系统[^2.29.13]
 
-[^2.29.13]:[不用装双系统，直接在 Windows 上体Linux：Windows Subsystem for Linux - 少数派](https://sspai.com/post/43813) 
+[^2.29.13]: [不用装双系统，直接在 Windows 上体Linux：Windows Subsystem for Linux - 少数派](https://sspai.com/post/43813) 
 
 [用 Linux 为主力系统，也能有 Windows 一样的使用体验 - 少数派](https://sspai.com/post/38895)
 
@@ -328,7 +372,7 @@ YAML 是专门用来写配置文件的语言，非常简洁和强大，远比 JS
 
 本文介绍 YAML 的语法，以 [JS-YAML](https://github.com/nodeca/js-yaml) 的实现为例。你可以去[在线 Demo](http://nodeca.github.io/js-yaml/) 验证下面的例子。[^1]
 
-[^1]:[YAML语法 ——阮一峰](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
+[^1]: [YAML语法 ——阮一峰](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
 
 2020-2-27 12:08:49
 
@@ -721,6 +765,7 @@ https://www.jianshu.com/p/9c0c2b57cb73 这里讲的比较详细，已将存在no
 
 将练习内容同步至 `.gitignore`  （翻译：忽略 git）我是在 Python 的安装文件中编写的程序，我没有必要将 Python 安装包同步到 GitHub, 上传缓慢，让看的的人困惑，甚至影响别人使用，就新建个 `gitignore` 告诉 git，那些是不要同步的。
 新建 `.gitignore` 使用文本编辑器打开（不要怀疑就是用文本编辑器打开文件(#^.^#) ），写入不需要同步的文件，同时可用正则表达式不同步某个类型的文件。
+
 - 文件夹名称
 - *.××× 后缀为 `xxx` 的文件，如 *.txt ，忽略后缀为 .txt的文件
 - ! *.xxx 同步后缀中为 .xxx 文件
@@ -737,19 +782,23 @@ https://www.jianshu.com/p/9c0c2b57cb73 这里讲的比较详细，已将存在no
 在 github push博客内容时，在里面创建一个目录，然后 git push 的时候，出现报错 "Everything up-to-date"
 
 原因：
+
 1. 没有 git add .
 2. 没有 git commit -m "提交信息"
 3. 如果上面两个步骤都成功执行，还出现这个错误是因为创建的目录下是空的，目录下必须有文件才能 git push 上传成功。
+
 ### 20200215
+
 博客提交过程
-  1. ```$ touch 2020-02-14-Blog.md```
-跳转到博客目录，新建文章， 注意添加 .md 后缀。
 
-  2. ```$ git add .``` 提交修改内容到缓冲区
+    1. ```$ touch 2020-02-14-Blog.md```
+       跳转到博客目录，新建文章， 注意添加 .md 后缀。
 
-  3. ```$ git commit -m "<提交说明>" ``` 说明变化内容，凝练可读 Typo是修改字词。
+    2. ```$ git add .``` 提交修改内容到缓冲区
 
-  4. ```$ git push ``` push本地到仓库的命令
+    3. ```$ git commit -m "<提交说明>" ``` 说明变化内容，凝练可读 Typo是修改字词。
+
+    4. ```$ git push ``` push本地到仓库的命令
 
   如果你设置了密码，需要输入密码，但是不会出现密码，正常输入即可
 
@@ -764,10 +813,12 @@ $ git commit -m "<修改说明>"
 同时 -m 部分可以替换（注：连字符与字母之间没有空格）
 
 commit 后面的参数可以为：
+
 - -m 为简短说明；
 - --amend 修改提交说明；
 
 push 后面的参数可以为：
+
 - .只提交修改部分的内容
 - A 提交全部内容
 
@@ -777,12 +828,17 @@ push 后面的参数可以为：
 
 
 ### 2020-2-14
+
 拼写错误
+
 - 大小写： print √；Print ×。不像输入验证码不区分大小写，Python对大小写敏感
 - 顺序：True √；Ture。汉子序顺并不影响读阅。英文也是。
 - 按键失误：number √；nmber ×。
+
 ## 准备
+
 ### 诚心正意
+
 诚心正意，而后格物致知，而后修齐治平！
 
 诚心正意，是动机。动机需要培养，需要呵护。
@@ -792,11 +848,16 @@ push 后面的参数可以为：
 不同学科有自己特有的思维模式，测绘告诉我分级控制精度，体育告诉进步要适当负荷，周期化自己能力提升。
 
 编程告诉自己自动化思维、Crude思维，自动化思维、学会 if 选择，思维不再线性化。
+
 ### 道
+
 老阳文章 ==待增补==
 camp101 ===待增补==
+
 ### 术
+
 以书籍为主，辅以视频资料，疑难问题自己想和网络搜索。
+
 - 笨办法学Python——主要参考教材
 - GitHub入门与实践——熟悉GitHub量化学习，记录学习过程
 - Python编程快速上手——交互式学习Python
@@ -811,9 +872,12 @@ Python编程快速上手，有很多使用 Python 进行自动化的例子，给
 网络资源
 网络资源不可全信哦，毕竟是没有经过同行评审的。
 有些来源更加可靠：
+
   - Stack Overflow 90%的疑问在这里你都能找到答案，剩下的 10% 可能是拼写错误。
   - 菜鸟教程
+
 ## README
+
 一口吃不成胖子，一下学不成编程，记录编程成长路，回头看看一点感动，也是记忆外部化！
 
 [^1]: 
