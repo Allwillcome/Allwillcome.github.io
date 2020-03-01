@@ -9,6 +9,121 @@ description: 记录黑客成长路！
 
 **记录 Python 学习路**
 
+2020-3-1 17:07:01
+
+**注释**
+
+- 帮助别人理解自己的代码
+  - 帮助明天的自己理解自己今天写的代码
+- 帮助自己理解别人的代码
+  - 写注释，让自己拉近观察代码的细节
+
+2020-3-1 15:24:35
+
+类的好处
+
+- 方便复用
+- 方便扩展
+- 方便维护
+
+类就像是**基因的制造图纸**，
+
+在 Python 中，一个对象的特征也成为属性（attribute）。它具有的行为也称为方法（method）
+
+**结论：对象 = 属性（特征） + 方法（行为）** 
+
+最后我们用以下代码，让机器开始造猪
+
+```python
+pig1 = Pig('猪')  #实例化，相当于怀孕
+```
+
+[如和理解 Python 的类与对象](https://www.zhihu.com/question/27699413)
+
+
+
+2020-3-1 15:17:27
+
+[python 中类和对象的使用 - 简书](https://www.jianshu.com/p/4b1f9257a2f2)
+
+2020-3-1 14:37:53
+
+- math 函数的引用
+
+- 问题
+
+  - 如何使用 Python 的 `math` 模块？
+
+- 所做尝试
+
+  - 尝试查阅 Python 的文档
+
+  - ```powershell
+    FUNCTIONS
+        acos(...)
+            acos(x)
+    
+            Return the arc cosine (measured in radians) of x.
+    
+        acosh(...)
+            acosh(x)
+    ```
+
+  - [Python 中 math模块常用的方法整理](https://www.cnblogs.com/666gang/p/10952421.html) 
+
+- 归纳总结
+
+  - 查询网络教程
+  - 更换数据库
+  - 参考错误提示
+  - 更换 Python 版本
+
+- 结果：`math.`
+
+2020-3-1 11:36:47
+
+- 问题记录
+
+  - 从 GitHub 上下载 ex43.py 习题，使用Python2.0 进行运行，没有报错，出现以下代码：
+
+  ```powershell
+  The Gothons of Planet Percal #25 have invaded your ship and destroyed
+  your entire crew.  You are the last surviving member and your last
+  mission is to get the neutron destruct bomb from the Weapons Armory,
+  put it in the bridge, and blow the ship up after getting into an
+  escape pod.
+  
+  
+  You're running down the central corridor to the Weapons Armory when
+  a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume
+  flowing around his hate filled body.  He's blocking the door to the
+  Armory and about to pull a weapon to blast you.
+  >
+  
+  ```
+
+  只有命令提示符，不知道输入什么信息。都是英文，感觉无从下口，决定重新返回代码，关键词定位。运行代码提示为 `You're running down the central corridor` ,在源代码中找到，`CentralCorridor` 
+
+  ![2020030111Python43ex](http://pics.waterfree.club/2020030111Python43ex.jpg)
+
+**2020-3-1 11:08:10**
+
+代码运行无果，百度无法搜谷歌，在 GitHub 上，*Learn Python the Hard Way* ，包含 Python2.0， 与Python3.0，而且知道通过查看仓库`git log` 复原学习过程。
+
+> All the codes are written in both Python2(2.7.5) and Python3(3.3.2).
+>
+> The best way to check my solution step by step is to use `git log` command. For instance,
+>
+> ```
+> $ git log -p Python2/ex04.py
+> ```
+>
+> Alternatively you can browse the history of any file on GitHub to see the change of it.
+>
+> If you got a better answer, welcome to comment the code and share your version!
+
+ref : [wzpan/Learn-Python-The-Hard-Way: My answer for the book Learn Python The Hard Way](https://github.com/wzpan/Learn-Python-The-Hard-Way) 
+
 ### 20200229
 
 2020-2-29 17:02:46
