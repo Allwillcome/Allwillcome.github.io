@@ -26,6 +26,40 @@ description: 记录黑客成长路！
 - 以日期为三级标题 （便于以后将里程碑设置为二级标题）
   - 在 三级标题内 以时间为节点记录内容
 
+---
+
+### 03 Week 总结
+
+2020-2-24 **→** 2020-3-1 
+
+**用时**：
+
+36.5 h（4 + 5 +5 +3 + 7 + 4.25 + 6.4）
+
+**收获**：
+
+1. 书写、阅读 200 行代码不再恐惧
+2. 丰富代码运行过程中报错的解决方法
+   1. 放置问题，补充基本知识
+   2. 思考问题的本质，变化搜索问题的角度
+   3. 寻求朋友的帮助
+3. 了解 Python 和电脑基本知识
+   1. 类与对象的区别
+   2. 根目录、绝对路径与相对路径
+   3. 环境变量
+   4. 项目骨架
+   5. 在 Windows 上 Python 多版本的安装与运行
+
+学习日志： [The-Journey-of-Learn-Pthon](http://www.waterfree.club/2020/03/01/2020-02-14-The-Journey-of-Learn-Pthon/)
+
+**改进**：
+
+1. 笨办法学 Python，严格按照书上指导，书写代码，运行程序
+
+2. 抑制好奇心，专注当前问题解决
+
+   
+
 ### 2020-3-1 
 
 **任务完成**：
@@ -49,8 +83,11 @@ description: 记录黑客成长路！
 2020-3-1 20:14:47
 
 - 问题描述：Typora 官方文档中说可以自动上传拖拽到文件中的图片，自己下载 PicGo 并在 Typora 中进行配置之后，无法自动上传。
+  - ![](http://pics.waterfree.club/20200301TyporaImageConfigure.png)
+    
 - 已经做努力：
   - 以管理员身份打开 Typora 以及 PicGo
+  - ![img](http://pics.waterfree.club/20200301202314验证图片上传.png)
   - 查询官网
     - If you use, custom command, and after clicking “Test Uploader” button in preferences panel, and its console output is Garbled characters, you may try to force the process to use UTF8 encoding, by prepending `@chcp 65001 >nul & cmd /d/s/c `before your custom command.
     - 彩云小译翻译：如果您使用，自定义命令，并在首选项面板中单击“ Test Uploader”按钮后，其控制台输出为含糊字符，您可以通过在自定义命令之前预置@chcp 65001 nul & cmd / d / s / c，尝试强制进程使用 UTF8编码。
