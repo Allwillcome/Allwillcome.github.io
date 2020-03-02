@@ -52,3 +52,27 @@ description: 以职场新人态度进行学习
    如：修改 论文
 
 3. 虚拟一个领导，看能否满意自己一天的工作
+
+另外，多说一点关于周报的事情可以参考下下面链接：
+
+为什么要写周报？记录一周收获与不足，复盘有依据，你的努力领导能看到。
+
+想要写周报，平常的日志不可少，
+
+最近在学编程，记录日志，使用 Time Track 记录每日的时间分配，在幕布中进行每日复盘。
+
+写完周报，采取什么样的方式发给老师呢？不要微信，采取邮件，进行异步沟通。为什么不用微信，微信交流一句对一句，很容易不过脑子说话，即时通讯也会分散注意力；邮件内容也非常容易归档，稍加整理，就是可以对外发布的漂亮文档。
+
+工具虽好，掌握需要时间。有点耐心，把学习当成剥洋葱，一次剥（学）一层。
+
+## 参考资料
+
+
+
+- [卡片助力输出， MarkDown + GitHub + LOFTER 有轻功 | ishanshan's blog](https://ishanshan.im/selfedu/tool/HbOutputOwetoCards) 
+
+* [学会「异步沟通」思维，比随便挑一堆协作工具更可贵 - 简书](https://www.jianshu.com/p/4717c15be0e5)
+* [和大 Boss 协同，你有什么秘诀？邮件先行。 | ishanshan's blog](https://ishanshan.im/selfedu/TipsCooperateWithBoss.html)
+* [用心写周报的同事，绩效不会太差 | ishanshan's blog](https://ishanshan.im/selfedu/TipsWeekly.html)
+* [学Python日志记录-阿帅的网志](http://www.waterfree.club/2020/03/02/2020-2-21-The-Journey-of-Learn-Pthon/)
+* [用职场工作流程规范自学过程 - 阿帅的网志](http://www.waterfree.club/blog/2020/02/29/StudyasaRecruit/)
