@@ -26,9 +26,145 @@ description: 记录黑客成长路！
 - 以日期为三级标题 （便于以后将里程碑设置为二级标题）
   - 在 三级标题内 以时间为节点记录内容
 
+### 02 WEEK 
+
+**总结** 
+
+200 行代码
+
+- 基本顺利，环境变量还是很重要的概念
+- 写入权限
+
+2020-3-2 21:49:56
+
+在 python 中可以直接使用
+
+a, b = b, a
+
+2020-3-2 21:10:21
+
+Python的对象通常都有属性(其它存储在对象内部的Python对象)和方法(对象的附属函数可以访问对象的内部数据) .
+
+2020-3-2 20:50:52
+
+**搜索不能代替思考**
+
+在阅读 《阅读 Python 进行数据分析》时。阅读书上内容
+
+> 阅读对象的类型很重要，最好能让函数可以处理多种类型的输入。你可以用 isinstance 函数检查对象是某个类型的实例：
+>
+> In [ ]: a =
+>
+> In [ ]: isinstance(a, )
+>
+> Out[ ]: True
+
+直接在 Python 37 IDL 中按照书本输入
+
+```python
+>>> a =
+SyntaxError: invalid syntax
+```
+
+文档先后对照，书中没有复制，但是应该赋值
+
+```python
+>>> a = 10
+>>> isinstance(a,10)
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    isinstance(a,10)
+TypeError: isinstance() arg 2 must be a type or tuple of types
+```
+
+按照在IDLE 中函数提示
+
+![image-20200302210454370](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20200302210454370.png)
+
+```python
+>>> isinstance(a,int)
+True
+>>> isinstance(a,float)
+False
+```
+
+
+
+2020-3-2 19:42:57
+
+通常情况下,许多文件系统操作的命令都有一个与命令提示符CMD中的别名,帮助用户猜测命令的功能，如下：
+
+```powershell
+Name  Definition
+----  ----------
+cli   Clear-Item
+clp   Clear-ItemProperty
+copy  Copy-Item
+cp    Copy-Item
+cpi   Copy-Item
+cpp   Copy-ItemProperty
+del   Remove-Item
+erase Remove-Item
+gi    Get-Item
+ni    New-Item
+```
+
+
+
+
+
+2020-3-2 17:55:29
+
+升级 pip 命令
+
+```powershell
+python -m pip install --upgrade pip
+```
+
+2020-3-2 17:51:34
+
+例如，使用豆瓣源来安装jieba包
+ `pip install jieba -i https://pypi.douban.com/simple`
+
+其他镜像源
+
+阿里云 http://mirrors.aliyun.com/pypi/simple/
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+豆瓣 http://pypi.douban.com/simple
+中国科学院 http://pypi.mirrors.opencas.cn/simple/
+清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+
+ref:[pip国内镜像源配置_Python_abcque的专栏-CSDN博客](https://blog.csdn.net/zhoulinshijie/article/details/87974824) 
+
+2020-3-2 17:37:55
+
+![](http://pics.waterfree.club/20200302174206Python中文.png)
+
+![](F:\Blog\Allwillcome.github.io\_posts\20200302173702Sheban.png)
+
+2020-3-2 16:44:14
+
+142 lines
+
+**继承与合成** 
+
+解决代码复用问题。继承可以让你在基类里遗憾父类的功能，**合成**是利用模块和别的类中的函数调用。
+
+2020-3-2 16:29:10
+
+python 中函数的调用在函数背后应该有 `()` , 如 `son.implicit()` 可以调用，`son.implicit()` 不能调用。
+
+2020-3-2 15:49:22
+
+父类和子类有三种交互方式：
+
+1. 子类的动作完全等同父类的动作 隐式继承（implicit inheritance）
+2. 子类的动作完全覆盖父类的动作 显示覆盖 （override inheritance）
+3. 子类的动作部分替换父类的动作 替换 （altered）
+
 ---
 
-### 03 Week 总结
+### 01 Week 总结
 
 2020-2-24 **→** 2020-3-1 
 
@@ -84,7 +220,7 @@ description: 记录黑客成长路！
 
 - 问题描述：Typora 官方文档中说可以自动上传拖拽到文件中的图片，自己下载 PicGo 并在 Typora 中进行配置之后，无法自动上传。
   - ![](http://pics.waterfree.club/20200301TyporaImageConfigure.png)
-    
+  
 - 已经做努力：
   - 以管理员身份打开 Typora 以及 PicGo
   - ![img](http://pics.waterfree.club/20200301202314验证图片上传.png)
@@ -830,11 +966,11 @@ https://www.jianshu.com/p/9c0c2b57cb73 这里讲的比较详细，已将存在no
 
     1. ```$ touch 2020-02-14-Blog.md```
        跳转到博客目录，新建文章， 注意添加 .md 后缀。
-
+    
     2. ```$ git add .``` 提交修改内容到缓冲区
-
+    
     3. ```$ git commit -m "<提交说明>" ``` 说明变化内容，凝练可读 Typo是修改字词。
-
+    
     4. ```$ git push ``` push本地到仓库的命令
 
   如果你设置了密码，需要输入密码，但是不会出现密码，正常输入即可
