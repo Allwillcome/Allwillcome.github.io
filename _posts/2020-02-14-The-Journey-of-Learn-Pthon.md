@@ -28,7 +28,17 @@ description: 记录黑客成长路！
 
 ### 02 WEEK 
 
+**2020-3-4**
 
+3 h，200 lines 代码
+2020-3-4 17:10:05
+
+- 学习 scipy interpolate 的使用
+  - [Interpolation (scipy.interpolate) — SciPy v1.4.1 Reference Guide](https://docs.scipy.org/doc/scipy/reference/tutorial/interpolate.html) 
+- 学习 Matplotlib 
+  - 学习过程中遇到，`TypeError: 'numpy.ndarray' object is not callable ` 重启 Spyder 后问题解决。
+  - [Matplotlib 教程 |中文翻译](https://liam.page/2014/09/11/matplotlib-tutorial-zh-cn/)
+  - [Matplotlib: Python plotting — Matplotlib 3.1.3 documentation](https://matplotlib.org/index.html)
 
 **2020-3-3** 
 
