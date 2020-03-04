@@ -28,6 +28,254 @@ description: 记录黑客成长路！
 
 ### 02 WEEK 
 
+
+
+**2020-3-3** 
+
+2020-3-3 20:34:10
+
+**总结**
+
+代码 200 lines
+
+**时间**
+
+3 h
+
+学习 numpy 
+
+2020-3-3 20:21:34
+
+**Anaconda切换国内镜像源**
+
+清华镜像源：
+
+[https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/](https://link.zhihu.com/?target=https%3A//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/)
+
+​    (1) 打开Anaconda Prompt，执行命令：
+
+```text
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+```
+
+​    (2) 执行命令：
+
+```text
+conda config --set show_channel_urls yes
+```
+
+​    (3) 此时C:\Users\Administrator\下已经生成配置文件：.condarc，内容如下：
+
+![img](https://pic3.zhimg.com/v2-0b93d391477b8dbcd415a6ed42aad2f2_b.jpg)
+
+删除第3行，保存；
+
+(4) 查看是否生效，执行命令：
+
+```text
+conda info
+```
+
+关注channel URLs下的内容：
+
+
+
+![img](https://pic1.zhimg.com/v2-99803cf8ab3eedfb325395037ad85ef4_b.jpg)
+
+
+
+​    (5) 测试一下，安装爬虫包 scrapy，执行命令：conda install scrapy
+
+2020-3-3 18:03:59
+
+**Ch 4.3 Array-Oriented Programming with Arrays **
+
+数组导向编程
+
+2020-3-3 18:39:39
+
+**Anaconda大法好**
+
+比如输入一下命令
+
+```python
+import matplotlib.pyplot as plt
+%matplotlib inline
+plt.style.use('ggplot')
+
+plt.plot(X, Y, marker='.', color='blue', linestyle='none')
+```
+
+调用的函数,有这么多，只下载 python 3 怎么知道其他安装包在不在
+
+```python
+Traceback (most recent call last):
+
+  File "<ipython-input-193-fda2b5acf644>", line 1, in <module>
+    plt.plot(X, Y, maker= '.', color = 'blue',makersize = 20,linestyle='none')
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\pyplot.py", line 2795, in plot
+    is not None else {}), **kwargs)
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\axes\_axes.py", line 1666, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\axes\_base.py", line 225, in __call__
+    yield from self._plot_args(this, kwargs)
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\axes\_base.py", line 405, in _plot_args
+    seg = func(x[:, j % ncx], y[:, j % ncy], kw, kwargs)
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\axes\_base.py", line 312, in _makeline
+    seg = mlines.Line2D(x, y, **kw)
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\lines.py", line 404, in __init__
+    self.update(kwargs)
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\artist.py", line 974, in update
+    ret = [_update_property(self, k, v) for k, v in props.items()]
+
+  File "D:\Program\Anaconda-20-3-1\lib\site-packages\matplotlib\artist.py", line 974, in <listcomp>
+    ret = [_update_property(self, k, v) for k, v in props.items()]
+```
+
+
+
+2020-3-3 18:05:33
+
+- [ meshgrid](https://baike.baidu.com/item/meshgrid/3794127?fr=aladdin) 
+  - 是MATLAB （一款应用程序） 中用于生成网格采样点的函数，在使用 MATLAB 进行 3D 图形绘制方面有着广泛的应用。
+  - <img src="https://img-blog.csdn.net/20180809111254714?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xsbHh4cTE0MTU5MjY1NA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" style="zoom:33%;" />
+  - **注意** ：一点就是meshgrid虽然生成了一个坐标矩阵，但是这个矩阵每个元素对应的索引和图中实际的坐标并不是完全对应的，比如说坐标矩阵中的索引[0，0]的位置的元素为（x，y）绘制的点是在（x，y）而不是（0，0）
+  - ref:  [numpy.meshgrid()理解_Python_lllxxq141592654的博客-CSDN博客](https://blog.csdn.net/lllxxq141592654/article/details/81532855)
+
+2020-3-3 17:50:01
+
+**Ch 4.2 Universal Functions： Fast Element-Wise Array Funcations**
+
+（通用函数：快速点对点数组函数）
+
+- 一些简单的函数做快速的向量化封装，输入是一个以上的标量，输出也是一个以上的标量。很多 ufuncs 都是点对点的
+- `sqrt`  是求平方根；`exp` 是 e 的平方
+
+2020-3-3 17:35:25
+
+**Ch 4.1 The Numpy ndarray （多维数组对象）**
+
+- 完成
+  - 1 Creating ndarrays
+  - 2 DataTypes for ndarrays 
+  - 3 Arithmetic withNumpy Arrays （ 数组计算）
+  - 4 基本的索引和切片
+  - 5 Boolean Indexing （布尔索引）
+  - 6 Fancy Indexing （花式索引）
+- 待解决
+
+- [ ] 花式索引
+- [ ] 元祖
+- [ ] Transposing Arrays and Swapping Axes (数组转置和轴交换)
+
+
+
+
+
+2020-3-3 13:37:18
+
+**jupyter 打开.ipynb 文件**
+
+​	确保安装 jupyter
+
+ 1. 在命令行进入 存放 ipynb 文件所在 目录
+
+ 2. 输入命令 `jupyter lab`
+
+ 3. 自动弹出
+
+    ref：[jupyter如何打开.ipynb文件？_开发工具_笨笨的静静-CSDN博客](https://blog.csdn.net/lj2048/article/details/100880199) 
+
+2020-3-3 12:11:14
+
+**使用 powershell 批量改文件名 ** 
+
+批量改文件擴展名
+
+需求：將D盤For PS文件夾下的所有的txt文件改爲html文件，即.txt改爲.html
+
+ ```powershell
+get-childItem 'D:\For PS' *.txt | rename-item -newname { $_.name -replace '\.txt','.html' } 
+ ```
+
+備註：由於replace的模式匹配字符串參數支持正則表達式，'.txt'要轉義成'\.txt'。
+
+###### 批量爲文件加前綴
+
+需求：將D盤For PS文件夾下的所有的txt文件加上一個“Test_”的前綴
+
+1. cd 'D:\For PS' 
+2. get-childItem -r *.txt | rename-Item -newname{'Test\_'+$\_.name} 
+
+**2020-3-3 12:03:40**
+
+查看 powershell 的命令别名
+
+​	1. 打开 powershell ，输入`alias`
+
+ 2. ```powershell
+    echo -> Write-Output
+    dir -> Get-ChildItem
+    rni -> Rename-Item
+    ```
+
+**2020-3-3 11:00:08**
+
+ pip 安装 Erro 13
+
+​	Could not install packages due to an EnvironmentError: [Errno 13] 
+
+`	pip install django-ckeditor --user` 可以解决
+
+**2020-3-3 10:54:11** 
+
+在 powershell 中输入`pip show xxx`（xxx，需查看的包名）
+
+**2020-3-3 10:48:23**
+
+**查看安装包命令** 
+
+\1. Start 一个 command prompt
+\2. 找到电脑中已经安装的 Python 位置：（where 命令只能在 cmd 中）
+
+```cmd
+where python
+```
+
+
+
+```cmd
+pip list <or> pip freeze
+```
+
+**ref:** [如何查看Python 安装位置以及已经安装的库_Python_JennyChen66的博客-CSDN博客](https://blog.csdn.net/JennyChen66/article/details/78487228/) 
+
+**2020-3-3 10:41:21**
+
+Typora 中有一个选项是`./${filename}. assets` ，怎么理解？
+
+直接搜索没有选项；分开搜索 `./${filename}`、 `assets` .
+
+- 关于 `assets` 的英文就是 “资产” 、“有用的东西”
+  - assets：一般存放开发过程中自己写的静态资源（image, css, js 等，如：shop.css, car.png, roomListUtil.js）
+    static：存放第三方静态资源（jquery.js, bootstrap.css 等），这里的资源一般是直接引用，当打包编译后 assets 中的静态资源也会编译到 static 目录下，这样原来引用 static 资源的地址也不用改变。
+  - ref：[assets在前端开发项目中的含义是什么_J-CSDN博客](https://blog.csdn.net/tsingsn/article/details/75313528) 
+- **${filename} 用法**
+  - #是去掉左边 （在键盘上 #在 ${} 之左边）
+  - % 是去掉右边（在键盘上 % 在 ${} 之右边）
+  - % %：从左边数第一条，从右边数最后一条
+  - % ：  从右边数第一条，从左边数最后一条
+  - ref: [${filename}用法一：${file内部的#%的匹配方式} - wqbin - 博客园](https://www.cnblogs.com/wqbin/p/11597700.html) 
+
+**2020-3-2**
+
 **总结** 
 
 200 行代码
