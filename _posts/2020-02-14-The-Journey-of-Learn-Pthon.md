@@ -1,5 +1,5 @@
 ---
-layout: post
+`layout: post
 title:笨办法学Python
 date: 2020-2-21
 categories: blog
@@ -27,6 +27,271 @@ description: 记录黑客成长路！
   - 在 三级标题内 以时间为节点记录内容
 
 ### 02 WEEK 
+
+### 2020-3-6
+
+**代码**
+
+170 lines 
+
+**时间**
+
+7h
+
+
+
+2020-3-6 22:04:11
+
+- 注意细节 搜索不能解决问题
+  - 在进行 ThinkStats2 的Ch2 练习绘制直方图时，可以出现图，但是没有具体的直方图。搜索一圈之后，没有找到解决办法，想起来自己昨天更改 matplotlib 的默认配置了
+  - <img src="http://pics.waterfree.club/20200306221021搜索不能解决问题.jpg" style="zoom:50%;" />
+  - 仔细对比，坐标轴果然不一样，左边坐标轴数值太小以至于不能显示
+
+2020-3-6 21:59:14
+
+- %matplotlib
+  - %matplotlib具体作用是当你调用matplotlib.pyplot的绘图函数plot()进行绘图的时候，或者生成一个figure画布的时候，可以直接在你的python console里面生成图像
+
+2020-3-6 21:52:04
+
+- [matplotlib 画图中文显示为方框的解决方法_Python_chenjt的博客-CSDN博客](https://blog.csdn.net/q1148013214/article/details/81172446)
+
+2020-3-6 21:24:55
+
+- `os` 模块
+  - os 是 operation system （操作系统）的缩写，这个库是对操作系统的封装，自适应 Linux 、Windows等系统。
+  - 常见操作
+    - os.name——name
+    - os.getcwd()——全称应该是'get current work directory'，获取当前工作的目录
+    - os.listdir(path)——列出 path 目录下所有的文件和目录名
+    - os.chdir(path)——'change dir'改变目录到指定目录
+  - ref：[python中os模块简介 - 飞天神猫丶 - 博客园](https://www.cnblogs.com/zxy6/p/11673425.html) 
+
+2020-3-6 21:16:34
+
+- Python 切换工作路径
+
+  - Spyder 的默认工作目录是在  `C:\\Users\\lenovo` , 想要切换，需要用到python的 `os` 模块。
+
+  - ###### 进入 python 控制台，查看工作路径，需要导入 os 包：
+
+    `import os`
+
+  3. 查看工作路径的命令：
+
+      `os.getcwd()`
+
+  4. 修改工作路径的命令：
+
+     `os.chdir("d:\\program")`
+     
+     ref:不错的 blog [潘高的小站](https://blog.pangao.vip/) 
+
+[Python操作目录，如：获取当前工作目录，获取执行命令的位置，路径拼接，路径拆分，文件重命名，删除文件，复制文件 | 潘高的小站](https://blog.pangao.vip/Python%E6%93%8D%E4%BD%9C%E7%9B%AE%E5%BD%95%EF%BC%8C%E5%A6%82%EF%BC%9A%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%EF%BC%8C%E8%8E%B7%E5%8F%96%E6%89%A7%E8%A1%8C%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%8D%E7%BD%AE%EF%BC%8C%E8%B7%AF%E5%BE%84%E6%8B%BC%E6%8E%A5%EF%BC%8C%E8%B7%AF%E5%BE%84%E6%8B%86%E5%88%86%EF%BC%8C%E6%96%87%E4%BB%B6%E9%87%8D%E5%91%BD%E5%90%8D%EF%BC%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%EF%BC%8C%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6/) 
+
+[Python获取时间和日期 | 潘高的小站](https://blog.pangao.vip/Python%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%A5%E6%9C%9F/) 
+
+2020-3-6 19:35:55
+
+- 在 windowns 系统上 python 中调用自己写的函数
+
+  ```python
+  import sys # 调用 sys 库
+  sys.path.append(r"E:\pycharm") # E:\pycharm 替换为自己函数所在目录
+  
+  ```
+
+  另外， 查看函数的安装路径
+
+  ```python 
+  import sys
+  sys.path
+  ```
+
+  
+
+2020-3-6 13:27:50
+
+- Why Python for statistics?
+  - R is a language dedicated to statistics. Python is a genneral-purpose languge with statistics modules. R has more statistical analysis features than Python, and specialized synataxes. However, when it comes to building complex analysis pipelines that mix statistics with e.g image analysis, text mining, or control of a physical experiment, the richness of Python is an invaluable asset.
+  - ref:https://scipy-lectures.org/packages/statistics/index.html
+
+2020-3-6 13:18:22
+
+- NA = not available
+  -  The weight of the second individual is missing in the CSV file. If we don’t specify the missing value (NA = not available) marker, we will not be able to do statistical analysis.
+
+2020-3-6 13:08:09
+
+- python 中 `\` 是转义字符
+
+  - 输入路径
+
+  ```python
+  data = pandas.read_csv('F:\Explore\auto_examples_python10\brain_size.csv',sep=';',na_values=".")
+  ```
+
+  运行后，提示
+
+  ```python
+  FileNotFoundError: [Errno 2] File b'F:\\Explore\x07uto_examples_python10\x08rain_size.csv' does not exist: b'F:\\Explore\x07uto_examples_python10\x08rain_size.csv'
+  ```
+
+  路径是复制粘贴过来的
+
+  - 将文件复制粘贴到桌面
+
+  ```python
+   data = pandas.read_csv("C:\Users\lenovo\Desktop\brain_size.csv",sep=';', na_values='.')
+  ```
+
+  运行后提示
+
+  ```
+  SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+  ```
+
+  - 百度问题 ：在Python中\是转义符，\u表示其后是UNICODE编码，因此\User在这里会报错，在字符串前面加个r表示就可以了
+
+  ```python 
+  data = pandas.read_csv("F:/Explore/auto_examples_python10/brain_size.csv",sep=';',na_values=".")
+  ```
+
+  问题解决，同样在 上出错误上加上 `r` 同样适用
+
+  ```python 
+  data = pandas.read_csv(r"F:\Explore\auto_examples_python10\brain_size.csv",sep=';',na_values=".")
+  ```
+
+  将 `\` 换成`/` ,即
+
+  ```python
+   data = pandas.read_csv("F:/Explore/auto_examples_python10/brain_size.csv",sep=';',na_values=".")
+  ```
+
+  
+
+2020-3-6 11:08:52
+
+viz mode 可视化编程 http://www.codeskulptor.org/viz/
+
+2020-3-6 10:40:51
+
+- **Scratch**是麻省理工学院的“终身幼儿园团队”（Lifelong Kindergarten Group）开发的图形化编程工具，主导开发的针对 5-12 岁儿童的可视化编程语言。只需要使用鼠标，学生就可以编写自己的故事书，动画片或者小游戏。 Scratch 是很好的培养学生的创新力、系统思维和协作的工具。
+
+2020-3-5 17:37:55
+
+- stack
+  - ref：
+    - [Python中stack(),vstack(),hstack()的用法和区别](https://blog.csdn.net/qq_39521554/article/details/80469666)
+    - real
+
+**2020-3-5**
+
+2020-3-5 14:43:15
+
+- 实操 Fraction 函数，使用 for 循环 计算等差数列
+
+2020-3-5 14:10:59
+
+- TensorFlow
+  - TensorFlow 是一个端到端开源**机器学习**平台它拥有一个包含各种工具、库和社区资源的全面灵活生态系统，可以让研究人员推动机器学习领域的先进技术的发展，并让开发者轻松地构建和部署由机器学习提供支持的应用。
+  - TensorFlow™ 是一个采用数据流图（data flow graphs），用于数值计算的开源软件库。节点（Nodes）在图中表示数学操作，图中的线（edges）则表示在节点间相互联系的多维数据数组，即张量（tensor）http://www.tensorfly.cn/ 。这些数据“线”可以输运“size可动态调整”的多维数据数组，即“张量”（tensor）。张量从图中流过的直观图像是这个工具取名为“Tensorflow”的原因。一旦输入端的所有张量准备好，节点将被分配到各种计算设备完成异步并行地执行运算。
+  - ![](http://www.tensorfly.cn/images/tensors_flowing.gif) 
+  - ref:[TensorFlow](https://tensorflow.google.cn/) 中国区可以访问，还有公众号
+    - [TensorFlow教程系列 |莫烦Python](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/)
+
+2020-3-5 13:39:44
+
+- 元祖
+  - 与列表区别，元组元素不能修改（更加安全），元祖使用小括号，列表使用方括号
+  - t = (1,) 单个元祖的定义，在代码后面有个， 这是因为括号()既可以表示tuple，又可以表示数学公式中的小括号，这就产生了歧义，
+  - ref：[Python 元祖（Tuple）操作详解](https://www.jb51.net/article/47986.htm)
+
+2020-3-5 13:29:17
+
+[python根据路径导入模块的方法](https://www.jb51.net/article/55840.htm)
+
+2020-3-5 12:55:40
+
+- 安装 Anaconda，提示`NotWritableError: The current user does not have write permissions to a required path` 
+- 解决方法：最简单的解决方法就是以管理员身份启动 Anaconda（Anaconda Navigator 或者 Anaconda Prompt）
+- ref：[Anaconda报NotWritableError错时解决的方法_](https://blog.csdn.net/qq_29680341/article/details/82917703)
+
+2020-3-5 12:28:48
+
+`conda install -c anaconda cudatoolkit=8.0`
+
+有些包在 conda 默认的 channels 中不包含，比如 cudatoolkit-8.0，cudnn 等，这时只需要在 conda install 指令后加上 - c anaconda 即可。比如要下载 cudatoolkit-8.0，在只需要输入
+
+2020-3-5 12:05:36
+
+- 在社区中学习
+
+  - 配置文件
+
+  - **plotly的在线绘图个人设置**
+
+    **4.1 在线绘图的配置**
+
+    有两种配置方式，
+
+    **方式一：代码配置。**即在绘图代码里面进行配置。在使用plotly绘图之前，添加如下代码即可：
+
+    ```python
+    import plotly 
+    plotly.tools.set_credentials_file(username='DemoAccount', api_key='lr1c37zw81')
+    ```
+
+    **方式二：配置文件配置。**直接修改配置文件，在自己的用户目录下面，找到下面的配置文件，并加以配置，将看到如下内容，自己修改即可。
+
+    ```python
+    {
+        "username": "DemoAccount",
+        "stream_ids": ["ylosqsyet5", "h2ct8btk1s", "oxz4fm883b"],
+        "api_key": "lr1c37zw81"
+    }
+    ```
+
+    ref:[python绘图骚操作之plotly（一）——plotly的基本绘图方式 - 云+社区 - 腾讯云](https://cloud.tencent.com/developer/article/1438008)
+
+2020-3-5 11:45:11
+
+使用 plotly 在线绘图 #API
+
+[plotly----比matplotlib更简单更美观的交互式绘图python库_](https://blog.csdn.net/u010137742/article/details/88851504)
+
+
+
+2020-3-5 11:43:25
+
+Plotly is a data science and AI company focused on taking data science out of the lab and into the business. Plotly makes it easy to create, deploy, and share interactive web apps, graphs, and visualizations in any programming language.
+
+ref: https://plot.ly/about-us/
+
+2020-3-5 11:38:56
+
+- Plotly
+  - plotly 是一个可交互，基于浏览器的绘图库，主打功能是**绘制在线可交互的图表**, 所绘制出来的图表真的赏心悦目。它所支持的语言不只是 Python，还支持诸如 r,matlab,javescript 等语言。plotly 绘制的图能直接在 jupyter 中查看，也能保存为离线网页，或者保存在 [plot.ly](https://blog.csdn.net/u010137742/article/details/plot.ly) 云端服务器内，以便在线查看。（[Version 4 Migration Guide | Python | Plotly](https://plot.ly/python/v4-migration/#offline-features-plotlyoffline-replaced-by-renderers-framework--html-export) 支持在线版本了）
+  - ![](http://upload-images.jianshu.io/upload_images/1068454-4c9c74bfaf105cc8.png)  
+
+早上上数据统计课程，好奇有没有 ”用Python学数据统计“ 的专业书籍，国内只有一本正在翻译的书籍还正在翻译，百度不行，用 google，正好看到了早上，王叔义在 知乎如何学 Python， 提到了 Coursera 、DataCamp，还有经常看大妈公众号中的配图。
+
+![](https://robocrop.realpython.net/?url=https%3A//files.realpython.com/media/Intro-to-Exploratory-Data-Analysis-With-Pandas_Watermarked.81a7d7df468f.jpg&w=480&sig=789fb7504a5df66a3ec5f1677ed5f1ee329d3008)
+
+
+
+
+
+学习资源
+
+* [Basic Statistics | Python/v3 | Plotly](https://plot.ly/python/v3/basic-statistics/#import-data) plotly 关于 Statistics 的介绍
+* [Statistics with Python | Coursera](https://www.coursera.org/specializations/statistics-with-python) Coursera 的 MOOC，学时 8 周
+* [3.1. Statistics in Python — Scipy lecture notes](https://scipy-lectures.org/packages/statistics/index.html) 附带操作代码
+* [statistics --- 数学统计函数 — Python 3.8.2 文档](https://docs.python.org/zh-cn/3/library/statistics.html) 官方 statistics 模块介绍
+* [Python Tutorials – Real Python](https://realpython.com/) 
+* [Python Tricks: The Book – Real Python](https://realpython.com/products/python-tricks-book/) 每天一个代码小游戏
+* [Introduction to Exploratory Data Analysis | Python](https://campus.datacamp.com/courses/statistical-thinking-in-python-part-1/graphical-exploratory-data-analysis?ex=1) DataCamp 的 Python 课程
 
 **2020-3-4**
 
