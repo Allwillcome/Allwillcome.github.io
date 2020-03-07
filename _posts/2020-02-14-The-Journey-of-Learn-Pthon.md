@@ -28,6 +28,72 @@ description: 记录黑客成长路！
 
 ### 02 WEEK 
 
+### 2020-3-7
+
+总结
+
+编程 8 小时（包含学统计时间）
+
+代码 50 hang
+
+2020-3-7 22:26:03
+
+- 用 Python 学编程遇到的问题
+  - 英语
+  - 代码 和 语法
+  - 变量名
+  - 统计学知识
+  - 方法
+    - cheat sheat 纸质笔记，自己看就行，多动脑筋
+
+2020-3-7 22:22:38
+
+- 正则表达式学习
+  - https://regex101.com/
+
+2020-3-7 12:22:29
+
+- 给图标增加标签后，不能显示图片
+  - 问题描述及解决 https://github.com/AllenDowney/ThinkStats2/issues/121
+  - 解决办法，代码一条运行
+  - 总结
+    - 不要忘记 GitHub ，尤其是作者 GitHub 的 issue
+    - 严格按照作者使用的软件甚至是代码格式
+    - 问题解决用时： 3 h
+
+2020-3-7 10:53:55
+
+- [Matplotlib](https://matplotlib.org/) 是 python 中的一个 2D 图形库, 它能以各种硬拷贝的格式和跨平台的交互式环境生成高质量的图形, 比如说柱状图, 功率谱, 条形图, 误差图, 散点图等. 其中, matplotlib.pyplot 提供了一个类似 matlab 的绘图框架, 使用该框架前, 必须先导入它.
+
+- Pandas 与 
+- pandas Cheat sheet 结合 matplotlib 库，可以将数据已图表的形式可视化，反映出数据的各项特征。
+
+![](https://images2018.cnblogs.com/blog/1295539/201803/1295539-20180320121307556-347978856.png)
+
+2020-3-7 10:04:23
+
+- 在一张图上绘制两个数据集
+
+```python 
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0, 2*np.pi, 50)
+plt.plot(x, np.sin(x),x,np.sin(2*x))
+plt.show()
+```
+
+这段代码和前面绘制一个数据集的代码几乎完全相同，只有一点例外，这段代码在调用 `plt.plot()` 的时候多传入了一个数据集，并用逗号与第一个数据集分隔开。
+
+2020-3-7 10:04:18
+
+- 学习 Matplotlib 步骤
+  - 学习基本的 matplotlib 术语，尤其是什么是图和坐标轴
+  - 始终使用面向对象的接口，从一开始就养成使用它的习惯
+  - 用基础的 pandas 绘图开始你的可视化学习
+  - 用 seaborn 进行更复杂的统计可视化
+  - 用 matplotlib 来定制 pandas 或者 seaborn 可视化
+  - <img src="https://mmbiz.qpic.cn/mmbiz_png/fhujzoQe7Tr0qXookOvL2cT5KyyW0ll6aADIkWbuu0ySgzVuwwl3Oj8dgia5jxiaa4s52dhmfFHF5DKSRwZXBjsA/640?wx_fmt=png" style="zoom:25%;" /> 
+
 ### 2020-3-6
 
 **代码**
