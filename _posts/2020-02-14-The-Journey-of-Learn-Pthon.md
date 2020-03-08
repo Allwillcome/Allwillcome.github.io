@@ -1,5 +1,5 @@
 ---
-`layout: post
+layout: post
 title:笨办法学Python
 date: 2020-2-21
 categories: blog
@@ -28,13 +28,111 @@ description: 记录黑客成长路！
 
 ### 02 WEEK 
 
+**总用时** 
+
+38.3 h(6.25 +3.3 + 3 +1 + 8.2 + 8.3 + 6)
+
+**代码** 
+
+820 行
+
+### 2020-03-08
+
+400 行代码 
+
+主题: python 内容复习
+
+2020-3-8 18:45:25
+
+用时 1 小时,终于能自己敲代码,计算 BMI了
+
+2020-3-8 17:51:27
+
+** 2 小时**
+
+2020-3-8 14:11:32
+
+- AK share 安装
+
+  - 国内安装-Anaconda (pip 多个参数的安装)
+
+    ```powershell
+    pip install akshare -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com  --user  --upgrade
+    
+    ```
+
+    pip 安装错误 解决 https://akshare.readthedocs.io/zh_CN/latest/akshare/ak-installation.html
+
+    
+
+2020-3-8 14:09:11
+
+- Plotly express
+
+Plotly 是新一代的数据可视化神器，TopQ量化开源团队，虽然plotly功能强大，却一直没有得到广泛应用，大部分py开发人员，还在使用陈旧的matplotlib，其中最重要的原因，就是plotly的设置过于繁琐。为此，plotly推出了其简化接口：Plotly Express，简称：px。
+
+
+
+作者：惑也
+链接：https://www.jianshu.com/p/41735ecd3f75
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+2020-3-8 13:25:08
+
+- 正则表达式的学习
+
+[如何用 Python 和正则表达式抽取文本结构化信息?]()
+
+[regexone](https://regexone.com/lesson/letters_and_digits?)
+
+[Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript](https://regex101.com/codegen?language=python) 
+
+有时候网速不稳定
+
+使用简介
+
+<img src="http://pics.waterfree.club/regex.zjmainstay.cn.jpg" style="zoom: 33%;" />
+
+<img src="http://pics.waterfree.club/regex.zjmainstay.cn-usage-demo.gif" style="zoom: 25%;" />
+
+2020-3-8 12:39:01
+
+- 模块有一个属性
+  - \__name__ 属性
+    - 模块有一个属性, \__name__.   当这个属性为 ‘\_\_name\_\_’ 时,说明当前模块被作为脚本运行
+- packa
+  - 一般一个package 是以个独立目录,里面有 \__init __.py 指明如何加载整个 Package
+
+2020-3-8 12:32:03
+
+- Python 2 与 3 的区别 -- 输入输出不同
+  - Python 3.5 doesn't have raw_input. It has `input()`
+  - 
+
+2020-3-8 12:02:31
+
+- from import
+  - 不推荐引入全部变量,会引起名称空间污染
+- 模块有一个属性, \__name__ . 
+
+2020-3-8 12:00:21
+
+[Python101 - 开智编程入门 PPT](https://docs.google.com/presentation/d/1AzJOmaqnzwYkcKhKHLDGBwmh_j-h2RacTTLPtHaSqJ8/edit#slide=id.g12ec68a8e7_0_45)
+
+关于转义字符, Unicode 等内容
+
+[A Byte of Python](https://python.swaroopch.com/) 
+
+
+
 ### 2020-3-7
 
 总结
 
 编程 8 小时（包含学统计时间）
 
-代码 50 hang
+代码 50 行
 
 2020-3-7 22:26:03
 
