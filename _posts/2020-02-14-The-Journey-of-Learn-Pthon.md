@@ -28,9 +28,98 @@ description: 记录黑客成长路！
 
 ### 03 WEEK
 
+### 20200311
+
+2020-3-11 21:03:26
+
+loc：通过选取行（列）标签索引数据（pandas DataFrame 默认不带标签）
+iloc：通过选取行（列）位置编号索引数据
+ix：既可以通过行（列）标签索引数据，也可以通过行（列）位置编号索引数据
+
+2020-3-11 18:12:31
+
+- {} [] ()
+
+字典的每个键值(key=>value)对用冒号(**:**)分割，每个对之间用逗号(**,**)分割，整个字典包括在花括号(**{})**中 ,格式如下所示：
+
+2020-3-11 17:50:34
+
+- ThinkStats2 使用指南
+  - 书中只是展示部分代码
+  - 在 配套 的代码中是全部代码
+  - 书是对代码的解释
+
+2020-3-11 17:19:11
+
+- %matplotlib 不行的时候，尝试 matplotlib inline
+
+  - ```python
+    由于 %matplotlib inline 的存在，当输入plt.plot(x,y_1)后，不必再输入 plt.show()，图像将自动显示出来
+    ```
+
+2020-3-11 17:19:07
+
+- pyplot 与 pylab 区别与联系
+  - pylab 交互更强，结合 pyplot 和 numpy， 更像 matlab
+  - 建立项目，偏向 pyplot
+  - ref： https://www.cnblogs.com/Shoesy/p/6673947.html
+
 2020-3-9 14:19:52
 
+### 20200310
 
+2020-3-10 18:24:11
+
+- kernel
+  - 内核是 Jupyter 与其他编程语言的交互编程协议 Python 的 Jupyter 内核是使用 IPython
+
+2020-3-10 18:19:31
+
+-  session (会话)
+  - 你可以理解成我们用浏览器上网，到关闭浏览器的这一过程。session 是会话过程中，服务器用来记录特定用户会话的信息。
+  - session 和 cookies 的关系还非常密切——cookies 中存储着 session 的编码信息，session 中又存储了 cookies 的信息。
+
+2020-3-10 16:53:09
+
+- 箱形图（Box-plot）
+  - ![](http://upload-images.jianshu.io/upload_images/8316927-b670c85839843c5e)
+
+2020-3-10 16:20:46
+
+- python中的foo有什么用
+  - 没什么作用就像张三李四一样
+
+2020-3-10 14:07:21
+
+- axes 与 subplot 区别
+
+  - axes 轴域（轴的组合）axis（轴）subplot（子图）figure（画板）
+
+  - figure 是电脑桌面， axes 是可以灵活移动的 图标， subplot 是固定不动的图标
+
+  - ```python
+    ax1 = fig.add_subplot(211) # 两行一列位置为1的子图
+    ```
+
+2020-3-10 13:54:39
+
+- plt.show() 不显示图片问题
+  - 直接输入 `%pylab`
+  - **python居然没有Tkinter**
+  -  ipython是父进程，一直运行，画图是子进程，可以显示。Python filename运行完，父进程结束了，所以不显示
+  - ref: https://www.jianshu.com/p/3f4b89aaf057
+
+2020-3-10 12:11:27
+
+- 在开头加上`from __future__ import print_function`
+  - 即使在 python2.X，使用 print 就得像 python3.X 那样加括号使用。python2.X 中 print 不需要括号，而在 python3.X 中则需要。
+
+2020-3-10 12:34:31
+
+- Python Cheat Sheet
+  - <img src="https://img-blog.csdnimg.cn/20181218182602697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjM0Mjk2OA==,size_16,color_FFFFFF,t_70" style="zoom: 33%;" />
+  - [Python 无敌小抄](https://blog.csdn.net/weixin_42342968/article/details/85072806)
+  - [Python CheatSheets -DataCamp](https://www.datacamp.com/community/data-science-cheatsheets) 
 
 ### 02 WEEK 
 
