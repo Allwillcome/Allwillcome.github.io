@@ -28,6 +28,14 @@ description: 记录黑客成长路！
 
 ### 03 WEEK
 
+### 2020-3-12 
+
+2020-3-12 11:42:53
+
+- pooled variance
+  - In statistics, pooled variance (also known as combined, composite, or overall variance) is a method for estimating variance of several different populations when the mean of each population may be different,
+  - ` pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)` 
+
 ### 20200311
 
 2020-3-11 21:03:26
