@@ -28,6 +28,12 @@ description: 记录黑客成长路！
 
 ### 03 WEEK
 
+### 2020-3-14
+
+- \1. lambda生成[匿名函数](https://www.baidu.com/s?wd=匿名函数&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)
+  \2. map(func,seq) 就是将函数作用在序列的每个元素上，然后创建由函数返回值组成的列表。
+  \3. map(lambda x: x % mydict, mylist)，遍历mylist每个元素，执行lambda函数，并返回一个列表
+
 ### 2020-3-12 
 
 2020-3-12 11:42:53
