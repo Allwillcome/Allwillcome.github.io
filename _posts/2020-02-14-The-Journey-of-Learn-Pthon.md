@@ -28,6 +28,110 @@ description: 记录黑客成长路！
 
 ### 03 WEEK
 
+### 2020-3-16
+
+**总结** 3.3 小时 88 行代码
+
+2020-3-16 20:59:31
+
+- Latex 学习
+  - LaTex 摸索学习 公式内的内容写在两个 $$ 中，希腊字母用对应的英文单词，前面加一个转义字符
+  - $\sigma = 1$ 的代码为`$ \sigma=1$`  
+
+2020-3-16 20:44:56
+
+- lognormal distribution （对数正态分布）
+  - 是指变量的对数复合正态分布，短期来看对数正态分布与正态分布很接近，长期来看，对数正态分布向上分布的数值更多一些。
+  - 人们完成某项特定任务需要的时间，每个人完成时间不同，且时间不可能为负值，不满足高斯的正态分布。
+  - def：[对数正态分布]([https://baike.baidu.com/item/%E5%AF%B9%E6%95%B0%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83/8976782?fr=aladdin](https://baike.baidu.com/item/对数正态分布/8976782?fr=aladdin))
+
+2020-3-16 20:29:34
+
+- Python dropna() 的用途
+  - 在处理数据时，处理缺失值
+
+2020-3-16 19:56:11
+
+- openCV
+  - OpenCV 是图像处理和深度学习入门的框架之一，也是计算机视觉领域中一个应用广泛的框架。
+
+2020-3-16 18:45:30
+
+- Python zip() 函数
+  - zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个元祖，然后返回这些元祖组成的列表
+  - 在 Python3  中 zip 返回的是一个 对象 `<zip object at 0x000001882C437588>`, 可以减少内存
+  - ref: [](https://www.runoob.com/python/python-func-zip.html)
+
+2020-3-16 18:45:24
+
+- 想要在一幅图上画两个函数，直接放在一个括号里就行
+
+2020-3-16 17:55:23
+
+- Matplotlib.pyplot 支持 LaTex 
+  - [Python matplotlib中显示 Latex 数学公式](https://blog.csdn.net/MAILLIBIN/article/details/89609364?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+
+2020-3-16 17:14:49
+
+- Python 保留指定位数的小数
+
+  - “%0.2f”
+
+  - format
+
+  - round（）函数，坑比较多
+
+    
+
+2020-3-16 17:11:01 
+
+- Python 3 的输出，就是简简单单的一个 BMI 函数我就做了很久了
+
+  ```python
+  def Bmi(weight, height):
+      
+      bmi =weight/((height/100)**2)
+      print("你的BMI是：%f" %bmi)
+  # 注意双引号与后面之间没有逗号，% f 格式化浮点数字，可指定小数点后的精度   
+      print("你的BMI是：%0.4f" %bmi)
+  
+  ```
+
+  
+
+2020-3-16 17:08:32
+
+- 成功编写 Percentile 和 Percentile_rank
+  - 什么都不知道先把函数名写上，想想自己要实现什么功能，把里面的变量拿出来，第一步就完成了
+  - 第二步想想要用这个功能可以拆解成什么功能
+  - 拼装组合，不断调试
+
+2020-3-16 16:07:53
+
+编程的热情不是很高涨，我不知道应该从头到尾过一遍编程知识，还是不管那么多，接着往下编程，编程知识还是不够扎实。算了吧，我先进行编程知识的学习吧。
+
+2020-3-16 14:44:49
+
+- Think Stats2 ch04 总结
+
+  - 1. 样本量相差较多，直方图（Hist）不能用 → 概率密度函数（PDM），同一个样本太多，噪音太多 → 累计密度函数（CDM）
+
+    2. 定义变量，定义函数（使用 for 循环、if 判断），使用函数
+
+    3. 熟悉 matplotlib.pyplot （这里是作者自己定义的thinkplot）函数。
+
+       
+
+       ```python
+       rank_cdf = thinkstats2.Cdf(ranks) #定义函数
+       thinkplot.Cdf(rank_cdf) #绘图
+       thinkplot.Config(xlabel="Percentile rank", ylabel="CDF")#进行绘制
+       ```
+
+    4. PercentileRank 函数 Percentile 函数
+    5. 列表中的 `scores.sort` 和 `for scores in scores:` 其中 `scores` 必须是列表
+    6. 变量容器：列表、字典、元祖。pandas 中的 series（一维数组），DataFram（二维数组）。
+
 ### 2020-3-14
 
 - \1. lambda生成[匿名函数](https://www.baidu.com/s?wd=匿名函数&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)
@@ -1023,6 +1127,9 @@ python 中函数的调用在函数背后应该有 `()` , 如 `son.implicit()` �
   - 查询官网
     - If you use, custom command, and after clicking “Test Uploader” button in preferences panel, and its console output is Garbled characters, you may try to force the process to use UTF8 encoding, by prepending `@chcp 65001 >nul & cmd /d/s/c `before your custom command.
     - 彩云小译翻译：如果您使用，自定义命令，并在首选项面板中单击“ Test Uploader”按钮后，其控制台输出为含糊字符，您可以通过在自定义命令之前预置@chcp 65001 nul & cmd / d / s / c，尝试强制进程使用 UTF8编码。
+  - 问题解决
+    - 修改 Picgo 端口即可
+    - ![](http://pics.waterfree.club/20200316Typora&Picgo.png)
 
 2020-3-1 17:07:01
 
