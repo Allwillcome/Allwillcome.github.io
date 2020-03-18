@@ -28,7 +28,240 @@ description: 记录黑客成长路！
 
 ### 03 WEEK
 
+### 2020-3-18
+
+2020-3-18 20:41:03
+
+- legend
+
+- ``` python
+  >>> import mataplotlib.pyplot as plt
+  >>> plt.plot(x, y, "o", xnew, f(xnew),"-",xnew,f2(xnew),"--")
+  # 下面的图例和上面的顺序是相对应的
+  >>> plt.legned(["data","linear","cubic"], loc="best") 
+  >>> plt.show
+  ```
+
+  legends
+
+  ```python
+  >>> ax.set(title = "An Example Axes",
+            yalbel = "Y-Axis",
+            xlabel="X-Axis")
+  >>> ax.legend(loc="best")
+  ```
+
+  
+
+2020-3-18 20:33:07
+
+- 什么叫做学会
+  - 第二天能够独立复述代码
+
+2020-3-18 19:57:13
+
+- 理解变量
+
+  - ```python
+    from scipy import some_module
+    some_module.some_function()
+    ```
+
+  - https://docs.scipy.org/doc/scipy/reference/tutorial/basic.html
+
+2020-3-18 19:46:00
+
+- jupyter里输入!ls,!pwd,报错
+  - [!ls用!dir替代](https://blog.csdn.net/weixin_43760295/article/details/93620024#lsdir_2)
+  - [pwd用cd直接回车替代](https://blog.csdn.net/weixin_43760295/article/details/93620024#pwdcd_6)
+  - ls 是powershell 命令不是 cd 
+
+2020-3-18 17:56:56
+
+- 用心，文中自有答案
+
+  - 浏览 Numpy 官网的时候，发现有 **Numpy User Guide** 和 **Numpy Reference** ，很好奇两者之间有什么区别呢？想着直接去百度 **Numpy User Guide 和 Numpy Reference 有什么区别**。 想着这么多年的英语不能白学，东西就在这里，点进去看看不好？
+
+  - 点击 Numpy User Guide，发现答案就在眼前
+
+  - > This guide is intended as an introductory overview of NumPy and explains how to install and make use of the most important features of NumPy. For detailed reference documentation of the functions and classes contained in the package, see the [NumPy Reference](https://numpy.org/doc/1.18/reference/index.html#reference).
+
+2020-3-18 17:43:54
+
+- 完成 Numpy_Glossary 的学习
+  - https://numpy.org/devdocs/glossary.html
+
+2020-3-18 17:22:48
+
+- 函数会有默认值
+
+  - np.arange()
+
+  - ```
+    Docstring:
+    arange([start,] stop[, step,], dtype=None)
+    
+    Return evenly spaced values within a given interval.
+    ```
+
+  ``` python
+  x = np.arange(5)
+  x
+  array([0, 1, 2, 3, 4])
+  ```
+
+  - 
+
+2020-3-18 17:20:17
+
+- Jupyter notebook 查看函数功能
+
+  - 选中需要查看的函数方法按快捷键`Shift+Tab`
+
+    光标直接放上面再按快捷键`Shift+Tab`就可以了,不用拖动选取,
+
+2020-3-18 17:07:42
+
+- matplotlib rumen
+  - matplotlib.pyplot 是命令行函数的几何，每个函数可以对图像进行修改
+  - ref：https://www.jianshu.com/p/ee8bb1bd0019
+
+2020-3-18 11:52:31
+
+- Matplotlib Customzie plot 合并写
+
+  - ```python
+    plt.plot(ls = "solid")
+    plt.plot(color="red")
+    plt.plot(marker="^")
+    ```
+
+  - ```
+    # 再次简写
+    plt.plot("r^")
+    ```
+
+    
+
+2020-3-18 10:44:24
+
+- Python 数据处理网课
+  - https://www.icourse163.org/course/BIT-1001870002
+
+    <img src="http://pics.waterfree.club/2020-3-18Python数据处理.png" alt="e94f288d7dfacbeca3efba4e4f03928" style="zoom:50%;" />
+
+2020-3-18 08:33:26
+
+- 笔记的作用
+  - 笔记是是个性化的记录
+  - 帮助自己过滤掉已经知道的知识，使用个人压缩算法，是对知识的高度压缩
+  - 可以替代原文，帮助自己复习
+
+2020-3-18 08:30:42
+
+- 复习
+  - 看到不等同于知道
+  - 自己花很多时间看官方的技术文档，看了很多但是没有内化
+
+### 2020-3-17 
+
+总结 171 行代码 
+
+2020-3-17 22:13:52
+
+- marker 而不是 maker
+  - [Matplotlib Line2D 设置](https://blog.csdn.net/claroja/article/details/71123012?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+
+2020-3-17 21:49:03
+
+- 学习反思
+  - 什么事情都不难，但是都要花费必要的时间进行重复
+  - 自己学习一定要有复习，没有复习，学会的东西都只是存储在工作记忆中的，而不是长时记忆。
+
+2020-3-17 18:26:36
+
+- 如何看懂技术文档
+
+  - 为什么要看技术文档？ 1. 技术文档是源头活水，结构比较稳定，不会变化
+
+  - 1. 了解官网地图大致结构
+    2. 知道自己的需要，知道去什么地方找
+    3. 难在 英文，难在不知道 单次的具体含义 broadcast
+
+    ```
+    >>> x = np.array([1, 2])
+    >>> y = np.array([[3], [4]])
+    
+    >>> x
+    array([1, 2])
+    
+    >>> y
+    array([[3],
+           [4]])
+    
+    >>> x + y
+    array([[4, 5],
+           [5, 6]])
+    ```
+
+    
+
+    1. 尝试操作，理解含义
+    2. 寻找中文文档，匹配中文意思
+    3. bodacast 可能听起来怪怪的，所以要改变之前的刻板印象
+
+2020-3-17 17:25:39
+
+- numpy 中的 array
+  - matrix是array的分支，matrix和array在很多时候都是通用的，你用哪一个都一样。但这时候，官方建议大家如果两个可以通用，那就选择array，因为array更灵活，速度更快，很多人把二维的array也翻译成矩阵。
+    但是matrix的优势就是相对简单的运算符号，比如两个矩阵相乘，就是用符号*，但是array相乘不能这么用，得用方法.dot()
+    array的优势就是不仅仅表示二维，还能表示3、4、5...维，而且在大部分Python程序里，array也是更常用的。
+
+2020-3-17 16:58:52
+
+给我物质和运动，我将为你们构造出世界来。 -——笛卡尔
+
+- 这不就是 Python 嘛，一切皆对象，包含属性和动作
+
+2020-3-17 11:45:27
+
+- 云服务器可以干什么
+  - [新手玩转云计算 - 阿里云大学](https://edu.aliyun.com/roadmap/cloud?userCode=lmp3ps11) 
+
+2020-3-17 11:12:55
+
+- 代理服务器
+  - 代理服务器提供的是网络服务，而这种网络服务比较特殊，需要一个网络终端进行代替性的服务，而不是直接性的进行网络服务。因此，在许多网关、路由器或者分线接口都会用到代理服务器。 介于客户端与 WEB 服务器之间，以代理形式获取信息
+  - 代理服务器——防火墙
+  - 隐藏真实 IP、突破 IP 访问限制
+  - 提升访问速度。 当服务器有缓存区，可以将网页前提进行读取和保持
+
+2020-3-17 11:05:49
+
+请问如何设置，在关闭 clash 的时候， 上网时不出现代理服务器出现问题
+
+关闭计算机**手动设置代理** 
+
+2020-3-17 10:58:13
+
+- 让手机连到电脑热点后也能翻墙
+  - 热点是直接转发到电脑网卡的，是不经过代理的
+  - 连上热点后，打开 clash 的 allow lan 功能，在手机 VPN 里面链接电脑的代理即可
+
 ### 2020-3-16
+
+2020-3-16 21:40:17
+
+- Markdown 表格里写数学公式采用 array 形式
+
+- $$
+  \begin{array}{|1|1|}\hline点数\eta & 2 &3 & 4 & 5 & 6 & 7 & 8 \\\hline概率 & \frac{1}{2} & \frac{1}{3} & \frac{1}{4} & \frac{1}{5} & \frac{1}{6} & \frac{1}{7} & \frac{1}{8} \\\hline\end{array}
+  $$
+
+
+  ​				
+  ​					
+  ​						
 
 **总结** 3.3 小时 88 行代码
 
@@ -403,7 +636,7 @@ plt.show()
   - 用基础的 pandas 绘图开始你的可视化学习
   - 用 seaborn 进行更复杂的统计可视化
   - 用 matplotlib 来定制 pandas 或者 seaborn 可视化
-  - <img src="https://mmbiz.qpic.cn/mmbiz_png/fhujzoQe7Tr0qXookOvL2cT5KyyW0ll6aADIkWbuu0ySgzVuwwl3Oj8dgia5jxiaa4s52dhmfFHF5DKSRwZXBjsA/640?wx_fmt=png" style="zoom:25%;" /> 
+  - <img src="https://mmbiz.qpic.cn/mmbiz_png/fhujzoQe7Tr0qXookOvL2cT5KyyW0ll6aADIkWbuu0ySgzVuwwl3Oj8dgia5jxiaa4s52dhmfFHF5DKSRwZXBjsA/640?wx_fmt=png"  /> 
 
 ### 2020-3-6
 
